@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HEAD Etiketi
+<head> etiketi, site ziyaretçileri tarafından görülmesi gerekmeyen kodları içerir. Bu etiket altına yazılan kodlar genellikle arama motorları ve örümcekler (Crawler veya Spider diye geçer) içindir. Head etiketi altında bütün etiketleri kullanabilmeniz mümkün değil. Kullanabileceğiniz etiketler;
+
+<title> (Bu etiketi kullanmak şarttır)
+<meta>
+<style>
+<script>
+<noscript>
+<link>
+<base>   -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patika.dev</title>
+</head>
+<body>
+<!-- Bazı etiketler kapanmaya ihtiyaç duymazlar (<br>,<hr>,<meta>) vs.   -->
+
+    <!-- Başlık   -->
+    <h1>Kodluyoruz "HTML Nedir?" Yazımıza Hoş Geldiniz.</h1>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+
+    <!-- Paragraf -->
+    <p>İlk Web<br/> Sayfamız</p>
+
+    <!--  Link  -->
+    <a href="http://"></a>
+
+    <!--  Resim  -->
+    <!--  img Etiketi
+Resim eklemek için<img> etiketini kullanıyoruz. <img src=”resim.jpg” alt=”açıklama yazısı” /> src="" kısmına eklemek istediğimiz görselin yolunu yani kaynağını yazmalıyız. Eğer görselimiz ve HTML dosyamız aynı klasörde ise görselin adını ve uzantısını yazmamız yeterlidir. alt="" kısmına görselin açıklamasını yazıyoruz fakat isterseniz boş bırakabilirsiniz. Bu etiket kapanmaya ihtiyaç duymaz.      -->
+<img src=”görseller/kodluyoruz.jpg” alt=”Kodluyoruz Bootcamp” />
+    
+    <!-- Listeler (Sıralı / Sırasız)  <ul> ve <ol> etiketleri liste oluşturma etiketleridir. Listeyi oluşturduktan sonra içeriğini oluşturmak için <li> etiketini kullanıyoruz.
+
+<ul> = "unordered list" sırasız liste anlamına geliyor. <ol> = "ordered list" sıralı liste anlamına geliyor. -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    
+    <!--    Script Etiketi
+<script> etiketi JavaScript kodlarını HTML içerisine yazabilmemizi sağlar.    -->
+    <script>
+        document.write("Kodluyoruz")
+    </script>
+    
+    <!--    Tablo   -->
+
+    <!--    Form    -->
+
+    <!--    İnput ve Butonlar    -->
+    <!--    Button Etiketi
+<button> etiketini buton oluşturmak için kullanırız. Buton üzerine yazmak istediğiniz içeriği etiketin içine yazmanız yeterlidir.    -->
+    <button> Buton </button>
+
+    <!--STRONG ve B Etiketi
+<strong> etiketi bir metinin arama motorlarına önemli olduğunu bildirmek için kullanılır. Kullanıldığı zaman metini kalın yapar. Eğer sadece metini kalınlaştırmak isterseniz <b> etiketini kullanabilirsiniz.-->
+    <h2><strong> Kodluyoruz </strong></h2>
+    <p><b> HTML </b> Etiketleri </p>
+
+    <!--    iframe Etiketi
+Belge içinde belge gösterebilmemizi sağlayan etikettir. Genelde başka bir sitedeki belgeyi kendi sayfamızda göstermek için kullanırız. örn: Youtube'dan bir videoyu sayfamızda göstermek istersek <iframe> kodlarını sayfamıza eklememiz yeterli.(video üzerinde sağ tıklayıp yerleştirme kodunu kopyala diyerek iframe kodunu kopyalayabiliriz.)    -->
+    <iframe width="640" height="581" src="https://www.youtube.com/embed/BHPYQHnD_QA" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+<!--
+    En Çok Kullanılan HTML Etiketleri Nelerdir
+Yazıya başlamadan önce HTML dilinde bir etiket nasıl oluşturulur bunu göstermek istiyorum. Etiketler küçüktür ve büyüktür işaretlerinin arasına yazılarak başlar (örn. <etiket>) içeriği yazdıktan sonra etiketi kapatmanız gerekir. Etiketi kapatmak için küçüktür, slash, etiket, büyüktür şeklinde yazılmalı (örn. </etiket>) Bütün bir örnek yapmak gerekirse (örn. <etiket> İçerik Yazılacak Alan </etiket>)
+
+Not: Bazı etiketler kapanmaya ihtiyaç duymazlar (örn. <br>, <hr>, <meta> vs.)
+
+HTML Etiketi
+HTML etiketi, dosya içeriğinin HTML dilinde yazıldığını tarayıcımıza bildirir. Bu etiket, kendi altında mutlaka <head> ve <body> etiketlerini barındırmalıdır. Eğer bir HTML dökümanı oluşturmak isterseniz ilk yapacağınız iş bir <html> etiketi oluşturmaktır. Ardından HTML etiketi altına <head> ve <body> etiketlerini yazmalısınız.
+
+<html>
+  <head></head> 
+  <body></body>
+</html>
+HEAD Etiketi
+<head> etiketi, site ziyaretçileri tarafından görülmesi gerekmeyen kodları içerir. Bu etiket altına yazılan kodlar genellikle arama motorları ve örümcekler (Crawler veya Spider diye geçer) içindir. Head etiketi altında bütün etiketleri kullanabilmeniz mümkün değil. Kullanabileceğiniz etiketler;
+
+<title> (Bu etiketi kullanmak şarttır)
+<meta>
+<style>
+<script>
+<noscript>
+<link>
+<base>
+<html>
+  <HEAD>
+    <title> Sekmede Görülecek İsim </title>
+    <meta name="Keywords" content="HTML,Kodluyoruz">
+  </HEAD> 
+  
+  <BODY></BODY>
+  
+</html>
+BODY Etiketi
+Web sayfamızda görmek istediğimiz bütün içerikleri <body> etiketi altına yazıyoruz. Anlatacağım diğer etiketleri <body> etiketi içerisine yazacağız.
+
+<html>
+  <HEAD>
+    <title> Sekmede Görülecek İsim </title>
+    <meta name="Keywords" content="HTML,Kodluyoruz">
+  </HEAD> 
+  
+  <BODY>
+    Site İçeriği
+  </BODY>
+</html>
+Not:
+
+Şu ana kadar oluşturduğumuz yapıyı idelerde kısayollar ile hızlıca oluşturabiliyoruz. Ben Visual Studio Code (VSC) kullanıyorum. VSC üzerinde "! + Enter" yazarak aşağıdaki yapıyı hızlıca oluşturabilirsiniz.
+
+<!DOCTYPE html> : Dökümanımızın HTML dilinde olduğunu tarayıcımıza bildiren talimattır. <html lang="en"> : Site içeriğinin dilini belirten etiket, "en" yerine "tr" yazabilirsiniz.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+H Etiketleri
+H etiketleri başlık etiketleridir. Büyükten küçüğe sırasıyla
+
+<h1>
+<h2>
+<h3>
+<h4>
+<h5>
+<h6>
+şeklindedir.
+
+Not: HTML otomatik olarak Başlık etiketlerinin öncesine ve sonrasına satır atlatır.
+
+P Etiketi
+<p> etiketi paragraf etiketidir. Sayfa içerisinde oluşturacağımız metinleri <p> etiketi ile oluştururuz. Aşağıdaki örnekte hem başlık etiketi hem de paragrafa etiketini kullandım.
+
+Not: HTML otomatik olarak Paragraf etiketinin öncesine ve sonrasına satır atlatır.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Kodluyoruz</h2>
+    <p>HTML Etiketleri</p>
+</body>
+</html>
+BR Etiketi
+<br> etiketi satır atlatma etiketidir ve kapatmaya ihtiyaç duymayan etiketlerden biridir. Atlatmak istediğiniz satır sayısı kadar <br> etiketi kullanabilirsiniz. NOT: BR etiketinin farklı kullanımlarını görebilirsiniz. örn.(<br>,<br/>,<br />) Hepsi aynı işlevi yerine getirir.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Kodluyoruz</h2> <br>
+    <p>HTML <br> Etiketleri</p>
+</body>
+</html>
+A Etiketi
+<a> etiketinin en önemli özelliği href özelliğidir. Bu etiket ile sayfaları linkleyebiliriz. Etiket içerisine yazılan içerik sayfa üzerinde gösterilecek içeriktir. href içine yazılan ise tıklandığında gideceği URL'dir.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.kodluyoruz.org">Kodluyoruz</a>
+</body>
+</html>
+UL - OL - Li Etiketi
+<ul> ve <ol> etiketleri liste oluşturma etiketleridir. Listeyi oluşturduktan sonra içeriğini oluşturmak için <li> etiketini kullanıyoruz.
+
+<ul> = "unordered list" sırasız liste anlamına geliyor. <ol> = "ordered list" sıralı liste anlamına geliyor.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    
+</body>
+</html>
+## HR Etiketi
+
+`<hr>` etiketi konusal bir geçişi temsil eder. Yazı yazarken yeni bir paragrafa başlamaya benzetebiliriz. Varsayılan olarak sayfaya yatay bir çizgi ekler ama bu özelliği değiştirilebilir. Bu etiket kapatılmaya ihtiyaç duymaz.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      HTML yani Hiper Metin İşaretleme Dili, web sayfalarında gördüğümüz iskelet
+      yapısını oluşturmak için kullanılan metin işaretleme dilidir.
+    </p>
+
+    <hr>
+
+    <p>
+      CSS, HTML elementlerinin çeşitli medya araçlarında nasıl ekrana
+      yansıtılacağını tanımlayan bir dildir. Tek seferde birden çok sayfa için
+      kurallar belirtebilir.
+    </p>
+
+    <hr>
+
+    <p>
+      JavaScript, HTML ve web için bir programlama dilidir. Dinamil olarak HTML
+      içeriğini ve özelliklerini, CSS'i değiştirebilme gibi işlemleri
+      gerçekleştirebilir.
+    </p>
+  </body>
+</html>
+STRONG ve B Etiketi
+<strong> etiketi bir metinin arama motorlarına önemli olduğunu bildirmek için kullanılır. Kullanıldığı zaman metini kalın yapar. Eğer sadece metini kalınlaştırmak isterseniz <b> etiketini kullanabilirsiniz.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><strong> Kodluyoruz </strong></h2>
+    <p><b> HTML </b> Etiketleri </p>
+</body>
+</html>
+Script Etiketi
+<script> etiketi JavaScript kodlarını HTML içerisine yazabilmemizi sağlar.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Kodluyoruz")
+    </script>
+</body>
+</html>
+Button Etiketi
+<button> etiketini buton oluşturmak için kullanırız. Buton üzerine yazmak istediğiniz içeriği etiketin içine yazmanız yeterlidir.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button> Buton </button>
+</body>
+</html>
+img Etiketi
+Resim eklemek için<img> etiketini kullanıyoruz. <img src=”resim.jpg” alt=”açıklama yazısı” /> src="" kısmına eklemek istediğimiz görselin yolunu yani kaynağını yazmalıyız. Eğer görselimiz ve HTML dosyamız aynı klasörde ise görselin adını ve uzantısını yazmamız yeterlidir. alt="" kısmına görselin açıklamasını yazıyoruz fakat isterseniz boş bırakabilirsiniz. Bu etiket kapanmaya ihtiyaç duymaz.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src=”görseller/kodluyoruz.jpg” alt=”Kodluyoruz Bootcamp” />
+</body>
+</html>
+iframe Etiketi
+Belge içinde belge gösterebilmemizi sağlayan etikettir. Genelde başka bir sitedeki belgeyi kendi sayfamızda göstermek için kullanırız. örn: Youtube'dan bir videoyu sayfamızda göstermek istersek <iframe> kodlarını sayfamıza eklememiz yeterli.(video üzerinde sağ tıklayıp yerleştirme kodunu kopyala diyerek iframe kodunu kopyalayabiliriz.)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe width="1519" height="581" src="https://www.youtube.com/embed/BHPYQHnD_QA" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</body>
+</html>
+Yorum Satırı
+HTML dilinde yorum satırı<!-- ile başlar ile biter.--> 
+
+
+
+
+
+
+</body>
+</html>
